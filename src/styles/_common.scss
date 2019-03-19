@@ -1,0 +1,138 @@
+body {
+  font-size: 14px;
+  line-height: 1.571428;
+  color: $dark-75;
+  // font-size: 16px;
+  // line-height: 1.5;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box
+}
+
+
+a {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.font-white {
+  color: white !important;
+}
+
+.font-primary {
+  color: $primary !important;
+}
+
+.font-blue {
+  color: $blue !important;
+}
+
+.font-green {
+  color: $green !important;
+}
+
+.font-red {
+  color: $red !important;
+}
+
+.font-orange {
+  color: $orange !important;
+}
+
+.font-yellow {
+  color: $yellow !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.stress {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+
+  &.align-top {
+    align-items: flex-start;
+  }
+
+  &.align-bottom {
+    align-items: flex-end;
+  }
+
+  &.align-stretch {
+    align-items: stretch;
+  }
+
+  &.align-middle {
+    align-items: center !important;
+  }
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &.content-center {
+    justify-content: center;
+  }
+
+  &.content-justify {
+    justify-content: space-between;
+  }
+
+  &.content-around {
+    justify-content: space-around;
+  }
+
+  &.direction-column {
+    flex-direction: column;
+  }
+}
+
+.flex-box {
+  flex: 1;
+}

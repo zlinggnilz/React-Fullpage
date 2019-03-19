@@ -1,0 +1,28 @@
+/* // Variables */
+@import '../assets/scss/core/variables.scss';
+
+$radius:8px;
+
+$dark:#262626;
+$dark-85:#262626;
+$dark-75:#404040;
+$dark-65:#595959;
+
+
+/* Function */
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity)
+}
+
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity)
+}
+
+@function cal($v1, $v2) {
+  @return percentage($v1 / $v2);
+}
+
+%transition {
+  transition: all 0.4s;
+
+}

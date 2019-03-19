@@ -1,0 +1,23 @@
+.page {
+  background: #000;
+  color: #ddd;
+  padding: 50px;
+
+  &:nth-child(even) {
+    background: #191919;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 40px 0;
+    transition: all 1s ease;
+  }
+}
+
+.activePage {
+  h3 {
+    font-size: 40px;
+    color: #fc0;
+  }
+}

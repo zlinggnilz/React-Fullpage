@@ -1,0 +1,14 @@
+{
+  "presets": ["react-app",
+    "babel-preset-mobx"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+    }],
+    ["import-rename", {
+      "^(.*)\\.jsx$": "$1"
+    }],
+    "react-hot-loader/babel"
+  ]
+}
